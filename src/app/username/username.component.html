@@ -1,0 +1,20 @@
+<h1>Solution</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Username</label>
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="userName">
+    </div>
+    <div class="col-xs-4 bg-dark">
+      <p>Your input: <strong>{{userName}}</strong></p>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary"
+              [disabled]="userName === ''"
+              (click)="onClickReset()">Reset User!</button>
+    </div>
+  </div>
+</div>
